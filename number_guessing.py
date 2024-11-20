@@ -19,13 +19,14 @@ def game_choice(difficulty_level):
                 print("That's the right number congrats you win")
                 guess_count = 11
             elif users_guess < number:
-                print("Your number is lower than mine, guess again: ")
                 guess_count += 1
+                print(f"Your number is lower than mine, you have {10 - guess_count} guesses left, guess again: ")
                 if guess_count == 10:
                     print("Sorry you loose, too many guesses!")
             elif users_guess > number:
-                print("Your number is higher than mine, guess again: ")
                 guess_count += 1
+                print(f"Your number is higher than mine, you have {10 - guess_count} guesses left, guess again: ")
+            
                 if guess_count == 10:
                     print("Sorry you loose, too many guesses!")
     if difficulty_level == "hard":
@@ -35,13 +36,15 @@ def game_choice(difficulty_level):
                 print("That's the right number congrats you win")
                 guess_count = 6
             elif users_guess < number:
-                print("Your number is lower than mine, guess again: ")
                 guess_count += 1
+                print(f"Your number is lower than mine, you have {5 - guess_count} guesses left, guess again: ")
+                
                 if guess_count == 5:
                     print("Sorry you loose, too many guesses!")
             elif users_guess > number:
-                print("Your number is higher than mine, guess again: ")
                 guess_count += 1
+                print(f"Your number is higher than mine, you have {5 - guess_count} guesses left, guess again: ")
+                
                 if guess_count == 5:
                     print("Sorry you loose, too many guesses!")
 
