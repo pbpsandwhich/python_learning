@@ -46,7 +46,7 @@ def game_choice(difficulty_level):
                 print(f"Your number is higher than mine, you have {5 - guess_count} guesses left, guess again: ")
                 
                 if guess_count == 5:
-                    print("Sorry you loose, too many guesses!")
+                    print(f"Sorry you loose, too many guesses! The computers number was {number}")
 
 
 
